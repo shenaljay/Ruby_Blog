@@ -1,0 +1,25 @@
+<%content_for :page_title, "Edit Group" %>
+<section class="section">
+  <div class = "container">
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <%= render "form", group: @group %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="button"><%= link_to "Back to groups", groups_path %></div>
+    <div class="button"><%= link_to "Show this group", @group %></div>
+  </div>
+  </div>
+</section>
+
+<br>
+
+<div>
+  <%= link_to "Show this group", @group %> |
+  <%= link_to "Back to groups", groups_path %>
+</div>

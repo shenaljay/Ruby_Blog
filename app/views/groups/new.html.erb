@@ -1,0 +1,19 @@
+<%content_for :page_title, "Create New Group" %>
+
+<section class="section">
+  <div class = "container">
+        <div class="card">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <%= render "form", group: @group %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <hr>
+    <div class="button"><%= link_to "Back to groups", groups_path %></div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+<%content_for :page_title, "Groups" %>
+<hr>
+<section class="section">
+  <div class = "container">
+    <div id="groups">
+      <% @groups.each do |group| %>
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p><%= link_to group.group, group %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+      <hr>
+      <div class="button"><%=link_to "Create New group", new_group_path %></div>
+
+    </div>
+  </div>
+</section>
+
